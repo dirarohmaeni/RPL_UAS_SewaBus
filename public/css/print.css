@@ -1,0 +1,127 @@
+/* =========================
+   PRINT CSS - LAPORAN KANTOR
+   Versi Profesional
+========================= */
+
+@page {
+    size: A4;
+    margin: 25mm 20mm;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 12pt;
+    color: #000;
+    line-height: 1.4;
+}
+
+/* ================= HEADER ================= */
+.report-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.report-header h2 {
+    margin: 0;
+    font-size: 18pt;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.report-header p {
+    margin: 2px 0;
+    font-size: 11pt;
+}
+
+.report-header hr {
+    border: none;
+    border-top: 2px solid #000;
+    margin: 12px 0 8px;
+}
+
+.report-header h3 {
+    margin: 12px 0 4px;
+    font-size: 14pt;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.periode {
+    font-size: 11pt;
+    margin-top: 4px;
+}
+
+/* ================= TABLE ================= */
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.report-table th,
+.report-table td {
+    border: 1px solid #000;
+    padding: 6px 8px;
+    font-size: 11pt;
+}
+
+.report-table th {
+    background: #eaeaea;
+    text-align: center;
+    font-weight: bold;
+}
+
+.report-table td {
+    vertical-align: middle;
+}
+
+/* RATA ANGKA */
+.report-table td:nth-child(1),
+.report-table td:nth-child(4),
+.report-table td:nth-child(5),
+.report-table td:nth-child(6) {
+    text-align: center;
+}
+
+/* ================= TOTAL ================= */
+.report-total {
+    margin-top: 15px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.report-total td {
+    padding: 6px 8px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.report-total tr:last-child td {
+    border-top: 2px solid #000;
+}
+
+/* ================= FOOTER / TTD ================= */
+.report-footer {
+    width: 100%;
+    margin-top: 45px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.report-footer .ttd {
+    text-align: center;
+    width: 260px;
+}
+
+.report-footer .ttd p {
+    margin: 4px 0;
+    font-size: 11pt;
+}
+
+/* ================= PRINT ONLY ================= */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
